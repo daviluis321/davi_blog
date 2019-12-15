@@ -21,6 +21,13 @@ module.exports = {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       options: {},
     },
+     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/posts`,
+        name: `blog`,
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
