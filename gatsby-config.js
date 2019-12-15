@@ -18,6 +18,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [".mdx", ".md"],
+    }
+  },
+    {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       options: {},
     },
@@ -62,6 +68,7 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-mdx`,
     // `gatsby-plugin-webpack-bundle-analyser-v2`,
   ],
 }
